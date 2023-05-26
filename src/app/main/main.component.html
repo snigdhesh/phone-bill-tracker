@@ -1,0 +1,34 @@
+<div class="banner">
+    <h2>Phone bill tracker</h2>
+</div>
+
+<div class="container mt-4">
+    <form action="">
+        <div class="form-group">
+            <label for="totalDataCharges">Total data charges (shared among all devices) </label>
+            <input type="text" class="form-control" id="totalDataCharges" name="totalDataCharges" 
+            placeholder="Please enter total shared data charges.." [(ngModel)]="totalDataCharges" #term (keyup)="calculateCharges(term.value)">
+        </div>
+
+        <div class="form-group">
+            <label for="totalNumberOfDevices">Total number of devices</label>
+            <input type="text" class="form-control" id="totalNumberOfDevices" name="totalNumberOfDevices"
+                value="{{totalNumberOfDevices.length}}" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="dataChargePerDevice">Data charges per device</label>
+            <input type="text" class="form-control" id="dataChargePerDevice" name="dataChargePerDevice" value="{{dataChargePerDevice}}" [(ngModel)]="dataChargePerDevice" readonly>
+        </div>
+    </form>
+</div>
+
+<div class="devices">
+    <ul>
+        <li *ngFor="let i of totalNumberOfDevices">
+            <div class="device"><app-device 
+                [deviceName]="i.deviceName"
+                [dataCharge]="i.dataCharge"></app-device></div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+    <form action="" #myform = "ngForm" (ngSubmit)="onSubmit(myform)">
+        <div style="text-align: right;"><label for="">Device number</label></div>
+        <hr>
+
+        <div class="form-group">
+            <label for="deviceName">Device name</label>
+            <input type="text" class="form-control" id="deviceName" name="deviceName" value="{{deviceName}}" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="dataCharge">Data charge</label>
+            <input type="text" class="form-control" id="dataCharge" name="dataCharge" value="{{dataCharge}}" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="planBill">Plan bill</label>
+            <input type="text" class="form-control" id="planBill" name="planBill" value="{{planBill}}" ngModel #term (keyup)="calculateCharges(term.value)">
+        </div>
+
+        <div class="form-group">
+            <label for="totalBill">Total bill</label>
+            <input type="text" class="form-control" id="totalBill" name="totalBill" value="{{totalBill}}" ngModel readonly>
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+</div>

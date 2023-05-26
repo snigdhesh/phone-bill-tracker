@@ -1,0 +1,13 @@
+  .form-group {
+      display: flex;
+      align-items: center;
+  }
+
+  .form-group label {
+      flex-basis: 80%;
+      margin-right: 1rem;
+  }
+
+  .container {
+    padding: 5%;
+  }
