@@ -1,27 +1,37 @@
 <div class="container">
-    <form action="" #myform = "ngForm" (ngSubmit)="onSubmit(myform)">
-        <div style="text-align: right;"><label for="">Device number</label></div>
+    <form [formGroup]="deviceForm" (ngSubmit)="onSubmit()">
+        <div>
+            <p>Total mobile data charges for {{numberOfDevices}} devices is {{totalDataCharges | currency}}</p>
+            <p><b>Note:</b> Please add to final bill to generate final bill for all {{numberOfDevices}} devices</p>
+        </div>
         <hr>
 
         <div class="form-group">
             <label for="deviceName">Device name</label>
-            <input type="text" class="form-control" id="deviceName" name="deviceName" value="{{deviceName}}" readonly>
+            <span class="input-group-addon" style="margin-right: 1%;visibility: hidden;">$</span>
+            <input type="text" class="form-control" id="deviceName" formControlName="deviceName" readonly>
         </div>
 
         <div class="form-group">
             <label for="dataCharge">Data charge</label>
-            <input type="text" class="form-control" id="dataCharge" name="dataCharge" value="{{dataCharge}}" readonly>
+            <span class="input-group-addon" style="margin-right: 1%">$</span>
+            <input type="text" class="form-control" id="dataCharge" formControlName="dataCharge" readonly>
         </div>
 
         <div class="form-group">
             <label for="planBill">Plan bill</label>
-            <input type="text" class="form-control" id="planBill" name="planBill" value="{{planBill}}" ngModel #term (keyup)="calculateCharges(term.value)">
+            <span class="input-group-addon" style="margin-right: 1%">$</span>
+            <input type="number" class="form-control" id="planBill" formControlName="planBill" (keyup)="calculateCharges($event)">
         </div>
 
         <div class="form-group">
             <label for="totalBill">Total bill</label>
-            <input type="text" class="form-control" id="totalBill" name="totalBill" value="{{totalBill}}" ngModel readonly>
+            <span class="input-group-addon" style="margin-right: 1%">$</span>
+            <input type="number" class="form-control" id="totalBill" formControlName="totalBill" readonly>
         </div>
-        <button class="btn btn-primary" type="submit">Save</button>
+        <button class="btn btn-primary" type="submit" [disabled]="!deviceForm.valid" *ngIf="buttonDisplay" title="Please enter phone bill">Add to final bill</button>
     </form>
+    <div *ngIf="deviceForm.touched && !deviceForm.controls['planBill'].valid" style="margin-top: 5%;" class="alert alert-danger">
+        Please enter total mobile data charges!
+    </div>
 </div>

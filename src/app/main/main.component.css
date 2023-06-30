@@ -1,5 +1,5 @@
 .banner {
-    background-color: #1F57B8;
+    background-color: #26619c;
     padding: 10px;
     text-align: center;
     color: white;
@@ -17,10 +17,10 @@
 
   .container{
       border: 0px solid black;
-      padding: 5%;
+      padding: 3%;
   }
 
-  ul {
+   ul {
     list-style-type: none;
     display: flex;
     /* justify-content: space-evenly; */
@@ -31,4 +31,25 @@
     border: 1px solid silver;
     margin: 1%;
     padding: 1%;
+  }
+
+  .btn-primary{
+    background-color: #26619c;
+  }
+
+  .btn-primary:hover{
+    background-color: white;
+    border: 1px solid #26619c;
+    color: #26619c;
+  }
+
+  .btn-primary:focus {
+    outline: none; /* remove outline */
+    box-shadow: none; /* remove box shadow */
+  }
+
+  .final-bill{
+    margin-top: 5%;
+    background-color: #26619c;
+    color: white
   }
