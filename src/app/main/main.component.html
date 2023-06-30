@@ -2,33 +2,46 @@
     <h2>Phone bill tracker</h2>
 </div>
 
-<div class="container mt-4">
-    <form action="">
+<div class="container mt-3">
+    <form [formGroup]="basicInfoForm" (ngSubmit)="onBasicFormSubmit()">
         <div class="form-group">
-            <label for="totalDataCharges">Total data charges (shared among all devices) </label>
-            <input type="text" class="form-control" id="totalDataCharges" name="totalDataCharges" 
-            placeholder="Please enter total shared data charges.." [(ngModel)]="totalDataCharges" #term (keyup)="calculateCharges(term.value)">
+            <label for="totalDataCharges">Total mobile data charges<br>(shared among all devices) </label>   
+            <span class="input-group-addon" style="margin-right: 1%">$</span>
+            <input type="number" class="form-control" formControlName="totalDataCharges" placeholder="Please enter total shared data charges.." (keyup)="calculateCharges($event)"/>
         </div>
-
         <div class="form-group">
             <label for="totalNumberOfDevices">Total number of devices</label>
-            <input type="text" class="form-control" id="totalNumberOfDevices" name="totalNumberOfDevices"
-                value="{{totalNumberOfDevices.length}}" readonly>
+            <span class="input-group-addon" style="margin-right: 1%; visibility: hidden;">$</span>      
+            <input type="number" class="form-control" formControlName="totalNumberOfDevices" readonly>
         </div>
-
         <div class="form-group">
             <label for="dataChargePerDevice">Data charges per device</label>
-            <input type="text" class="form-control" id="dataChargePerDevice" name="dataChargePerDevice" value="{{dataChargePerDevice}}" [(ngModel)]="dataChargePerDevice" readonly>
+            <span class="input-group-addon" style="margin-right: 1%">$</span>
+            <input type="number" class="form-control" formControlName="dataChargePerDevice" readonly>
+        </div>
+        <button class="btn btn-primary" type="submit" [disabled]="!basicInfoForm.valid" *ngIf="displaySaveButton">save</button>
+        <input class="btn btn-primary" type="button" *ngIf="displayResetButton" (click)="onResetForm()" value="Reset"/>
+
+        <div *ngIf="basicInfoForm.touched && !basicInfoForm.value.totalDataCharges" style="margin-top: 5%;" class="alert alert-danger">
+            Please enter total mobile data charges!
         </div>
     </form>
+
+    <div class="card final-bill" *ngIf="finalBill> 0">
+        <div class="card-body" style="text-align: center;">
+            <h1>Final bill: ${{finalBill}}</h1>
+        </div>
+      </div>
+   
+
 </div>
 
-<div class="devices">
+<div class="devices" *ngIf="showDevices">
     <ul>
-        <li *ngFor="let i of totalNumberOfDevices">
-            <div class="device"><app-device 
-                [deviceName]="i.deviceName"
-                [dataCharge]="i.dataCharge"></app-device></div>
+        <li *ngFor="let i of devices">
+            <div class="device">
+                <app-device (totalBillEvent)="calculateFinalBill($event)"  [deviceName]="i.deviceName" [dataCharge]="i.dataCharge" [numberOfDevices]="devices.length" [totalDataCharges]="totalMobileDataCharges"></app-device>
+            </div>
         </li>
     </ul>
 </div>

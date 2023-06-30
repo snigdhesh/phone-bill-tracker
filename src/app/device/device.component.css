@@ -11,3 +11,18 @@
   .container {
     padding: 5%;
   }
+
+  .btn-primary{
+    background-color: #26619c;
+  }
+
+  .btn-primary:hover{
+    background-color: white;
+    border: 1px solid #26619c;
+    color: #26619c;
+  }
+
+  .btn-primary:focus {
+    outline: none; /* remove outline */
+    box-shadow: none; /* remove box shadow */
+  }
