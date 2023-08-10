@@ -1,7 +1,8 @@
 import { Component,SimpleChanges } from '@angular/core';
 import { IDevice } from '../models/IDevice';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Event } from '@angular/router';
+import { environment } from 'src/environments/environment';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -9,12 +10,7 @@ import { Event } from '@angular/router';
 })
 export class MainComponent{
 
-  devices: IDevice[] = [
-    { deviceName: "Neha Prasad", dataCharge: 0},
-    { deviceName: "Naga", dataCharge: 0},
-    { deviceName: "Nirman", dataCharge: 0},
-    { deviceName: "Hosanna", dataCharge: 0}
-  ];
+  devices: IDevice[] = environment.devices;
 
   finalBill: number=0;
   totalMobileDataCharges: number=0;
