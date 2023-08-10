@@ -1,14 +1,4 @@
-.banner {
-    background-color: #26619c;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-  .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
+
 
   .form-group {
     display: flex;

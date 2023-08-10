@@ -24,6 +24,7 @@ export class DeviceComponent {
   bills: number[]=[];
 
   @Output() totalBillEvent = new EventEmitter<number>();
+  @Output() formDataEvent = new EventEmitter<any>();
 
   formData: any={};
 
@@ -68,6 +69,7 @@ export class DeviceComponent {
 
   onSubmit(){
     this.totalBillEvent.emit(this.totalBill);
+    this.formDataEvent.emit(this.deviceForm);
     this.buttonDisplay=false;
   }
 }

@@ -1,7 +1,10 @@
-import { Component,SimpleChanges } from '@angular/core';
+import { Component,EventEmitter,Output,SimpleChanges } from '@angular/core';
 import { IDevice } from '../models/IDevice';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { environment } from 'src/environments/environment';
+import { ISummary } from '../models/ISummary';
+import { Router } from '@angular/router';
+import { SummaryService } from '../services/summary.service';
 
 @Component({
   selector: 'app-main',
@@ -10,7 +13,10 @@ import { environment } from 'src/environments/environment';
 })
 export class MainComponent{
 
+  constructor(private router: Router,private summaryService: SummaryService){}
+
   devices: IDevice[] = environment.devices;
+  summary: ISummary[] = [];
 
   finalBill: number=0;
   totalMobileDataCharges: number=0;
@@ -49,10 +55,16 @@ export class MainComponent{
   }
 
   calculateFinalBill(e:any){
-    console.log("Before addition:",this.finalBill)
     this.finalBill=this.finalBill+e;
     this.finalBill=Number(this.finalBill.toFixed(2));
-    console.log("After addition:",this.finalBill);
+  }
+  displayFormData(form:any){
+    this.summary.push(form.value);
+  }
+
+  checkSummary(){
+    this.summaryService.setSummary(this.summary);
+    this.router.navigate(["/summary"]);
   }
 
   onResetForm(){
@@ -62,5 +74,6 @@ export class MainComponent{
     this.finalBill=0;
     this.basicInfoForm.controls['totalNumberOfDevices'].setValue(this.devices.length);
   }
+  
 
 }

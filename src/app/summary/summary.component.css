@@ -1,0 +1,15 @@
+.container{
+    border: 0px solid #26619c;
+    padding: 2%;
+    display: flex;
+    column-gap: 50px;
+}
+
+.code{
+    background-color: gainsboro;
+}
+
+button{
+    justify-self: flex-end;
+    align-self: flex-start;
+}
