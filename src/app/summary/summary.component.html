@@ -1,0 +1,6 @@
+<div class="container">    
+    <div class="container code mt-3" *ngIf="summary.length > 0">
+        <pre>{{summary|summary|json}}</pre>
+    </div>
+    <button class="btn btn-default" [routerLink]="['/']">Home</button>
+</div>

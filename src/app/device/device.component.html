@@ -21,7 +21,12 @@
         <div class="form-group">
             <label for="planBill">Plan bill</label>
             <span class="input-group-addon" style="margin-right: 1%">$</span>
-            <input type="number" class="form-control" id="planBill" formControlName="planBill" (keyup)="calculateCharges($event)">
+            <input type="number" class="form-control" id="planBill" formControlName="planBill" (keyup)="calculatePlanBillCharges($event)">
+        </div>
+        <div class="form-group">
+            <label for="additionalCharges">Additional charges <br>(if any)</label>
+            <span class="input-group-addon" style="margin-right: 1%">$</span>
+            <input type="number" class="form-control" id="additionalCharges" formControlName="additionalCharges" (keyup)="calculateAdditionalCharges($event)">
         </div>
 
         <div class="form-group">
