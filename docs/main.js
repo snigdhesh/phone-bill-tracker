@@ -406,9 +406,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function MainComponent_button_22_Template(rf, ctx) {
+function MainComponent_button_30_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "button", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "button", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, " save ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
@@ -417,11 +417,11 @@ function MainComponent_button_22_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("disabled", !ctx_r0.basicInfoForm.valid);
   }
 }
-function MainComponent_input_23_Template(rf, ctx) {
+function MainComponent_input_31_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "input", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function MainComponent_input_23_Template_input_click_0_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "input", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function MainComponent_input_31_Template_input_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r6);
       const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r5.onResetForm());
@@ -429,22 +429,22 @@ function MainComponent_input_23_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
 }
-function MainComponent_div_24_Template(rf, ctx) {
+function MainComponent_div_32_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1, " Please enter total mobile data charges! ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
   }
 }
-function MainComponent_div_25_Template(rf, ctx) {
+function MainComponent_div_33_Template(rf, ctx) {
   if (rf & 1) {
     const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 19)(1, "div", 20)(2, "h1");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 21)(1, "div", 22)(2, "h1");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpipe"](4, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "button", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function MainComponent_div_25_Template_button_click_5_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "button", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("click", function MainComponent_div_33_Template_button_click_5_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r8);
       const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r7.checkSummary());
@@ -458,15 +458,15 @@ function MainComponent_div_25_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"]("Final bill: ", _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵpipeBind1"](4, 1, ctx_r3.finalBill), "");
   }
 }
-function MainComponent_div_26_li_2_Template(rf, ctx) {
+function MainComponent_div_34_li_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "li")(1, "div", 24)(2, "app-device", 25);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("totalBillEvent", function MainComponent_div_26_li_2_Template_app_device_totalBillEvent_2_listener($event) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "li")(1, "div", 26)(2, "app-device", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("totalBillEvent", function MainComponent_div_34_li_2_Template_app_device_totalBillEvent_2_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r12);
       const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r11.calculateFinalBill($event));
-    })("formDataEvent", function MainComponent_div_26_li_2_Template_app_device_formDataEvent_2_listener($event) {
+    })("formDataEvent", function MainComponent_div_34_li_2_Template_app_device_formDataEvent_2_listener($event) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r12);
       const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
       return _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵresetView"](ctx_r13.displayFormData($event));
@@ -480,10 +480,10 @@ function MainComponent_div_26_li_2_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("deviceName", i_r10.deviceName)("dataCharge", i_r10.dataCharge)("numberOfDevices", ctx_r9.devices.length)("totalDataCharges", ctx_r9.totalMobileDataCharges);
   }
 }
-function MainComponent_div_26_Template(rf, ctx) {
+function MainComponent_div_34_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 22)(1, "ul");
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](2, MainComponent_div_26_li_2_Template, 3, 4, "li", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 24)(1, "ul");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](2, MainComponent_div_34_li_2_Template, 3, 4, "li", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
@@ -503,15 +503,15 @@ class MainComponent {
     this.showDevices = false;
     this.displaySaveButton = true;
     this.displayResetButton = false;
+    this.totalDataCharge = 0;
+    this.lateFee = 0;
     this.basicInfoForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormGroup({
       totalDataCharges: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControl('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
+      lateFee: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControl(''),
       totalNumberOfDevices: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControl(this.devices.length),
       dataChargePerDevice: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControl(0)
     });
     this.dataChargePerDevice = 0;
-  }
-  ngOnChanges(changes) {
-    console.log(changes['totalDataCharges'].currentValue);
   }
   onBasicFormSubmit() {
     this.displaySaveButton = false;
@@ -519,8 +519,15 @@ class MainComponent {
     this.showDevices = true;
     this.finalBill = 0;
   }
-  calculateCharges(e) {
-    let totalDataCharges = e.target.value;
+  setTotalDataCharge(e) {
+    this.totalDataCharge = e.target.value;
+    this.calculateSharedBill(this.totalDataCharge);
+  }
+  setLateFee(e) {
+    this.lateFee = e.target.value;
+    this.calculateSharedBill(Number(this.totalDataCharge) + Number(this.lateFee));
+  }
+  calculateSharedBill(totalDataCharges) {
     this.dataChargePerDevice = totalDataCharges / this.devices.length;
     this.dataChargePerDevice = Number(this.dataChargePerDevice.toFixed(2));
     this.basicInfoForm.controls['dataChargePerDevice'].setValue(this.dataChargePerDevice);
@@ -538,7 +545,7 @@ class MainComponent {
   }
   checkSummary() {
     this.summaryService.setSummary(this.summary);
-    this.router.navigate(["/summary"]);
+    this.router.navigate(['/summary']);
   }
   onResetForm() {
     this.basicInfoForm.reset();
@@ -554,10 +561,9 @@ MainComponent.ɵfac = function MainComponent_Factory(t) {
 MainComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({
   type: MainComponent,
   selectors: [["app-main"]],
-  features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]],
-  decls: 27,
+  decls: 35,
   vars: 6,
-  consts: [[1, "container", "mt-3"], [3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "totalDataCharges"], [1, "input-group-addon", 2, "margin-right", "1%"], ["type", "number", "formControlName", "totalDataCharges", "placeholder", "Please enter total shared data charges..", 1, "form-control", 3, "keyup"], ["for", "totalNumberOfDevices"], [1, "input-group-addon", 2, "margin-right", "1%", "visibility", "hidden"], ["type", "number", "formControlName", "totalNumberOfDevices", "readonly", "", 1, "form-control"], ["for", "dataChargePerDevice"], ["type", "number", "formControlName", "dataChargePerDevice", "readonly", "", 1, "form-control"], ["class", "btn btn-primary", "type", "submit", 3, "disabled", 4, "ngIf"], ["class", "btn btn-primary", "type", "button", "value", "Reset", 3, "click", 4, "ngIf"], ["style", "margin-top: 5%", "class", "alert alert-danger", 4, "ngIf"], ["class", "card final-bill", 4, "ngIf"], ["class", "devices", 4, "ngIf"], ["type", "submit", 1, "btn", "btn-primary", 3, "disabled"], ["type", "button", "value", "Reset", 1, "btn", "btn-primary", 3, "click"], [1, "alert", "alert-danger", 2, "margin-top", "5%"], [1, "card", "final-bill"], [1, "card-body", 2, "text-align", "center"], [1, "btn", "btn-default", "mt-3", 3, "click"], [1, "devices"], [4, "ngFor", "ngForOf"], [1, "device"], [3, "deviceName", "dataCharge", "numberOfDevices", "totalDataCharges", "totalBillEvent", "formDataEvent"]],
+  consts: [[1, "container", "mt-3"], [3, "formGroup", "ngSubmit"], [1, "form-group"], ["for", "totalDataCharges"], [1, "input-group-addon", 2, "margin-right", "1%"], ["type", "number", "formControlName", "totalDataCharges", "placeholder", "Please enter total shared data charges..", 1, "form-control", 3, "keyup"], ["for", "lateFee"], ["type", "number", "formControlName", "lateFee", "placeholder", "Late fee charges (if any)..", 1, "form-control", 3, "keyup"], ["for", "totalNumberOfDevices"], [1, "input-group-addon", 2, "margin-right", "1%", "visibility", "hidden"], ["type", "number", "formControlName", "totalNumberOfDevices", "readonly", "", 1, "form-control"], ["for", "dataChargePerDevice"], ["type", "number", "formControlName", "dataChargePerDevice", "readonly", "", 1, "form-control"], ["class", "btn btn-primary", "type", "submit", 3, "disabled", 4, "ngIf"], ["class", "btn btn-primary", "type", "button", "value", "Reset", 3, "click", 4, "ngIf"], ["style", "margin-top: 5%", "class", "alert alert-danger", 4, "ngIf"], ["class", "card final-bill", 4, "ngIf"], ["class", "devices", 4, "ngIf"], ["type", "submit", 1, "btn", "btn-primary", 3, "disabled"], ["type", "button", "value", "Reset", 1, "btn", "btn-primary", 3, "click"], [1, "alert", "alert-danger", 2, "margin-top", "5%"], [1, "card", "final-bill"], [1, "card-body", 2, "text-align", "center"], [1, "btn", "btn-default", "mt-3", 3, "click"], [1, "devices"], [4, "ngFor", "ngForOf"], [1, "device"], [3, "deviceName", "dataCharge", "numberOfDevices", "totalDataCharges", "totalBillEvent", "formDataEvent"]],
   template: function MainComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0)(1, "form", 1);
@@ -567,44 +573,57 @@ MainComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["�
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "div", 2)(3, "label", 3);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](4, "Total mobile data charges");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](5, "br");
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "(shared among all devices) ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](6, "(shared among all devices)");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](7, "span", 4);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](8, "$");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](9, "input", 5);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("keyup", function MainComponent_Template_input_keyup_9_listener($event) {
-        return ctx.calculateCharges($event);
+        return ctx.setTotalDataCharge($event);
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](10, "div", 2)(11, "label", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](12, "Total number of devices");
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](12, "Late fee");
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](13, "br");
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](14, "(shared among all devices)");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](13, "span", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](14, "$");
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](15, "span", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](16, "$");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](15, "input", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](17, "input", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("keyup", function MainComponent_Template_input_keyup_17_listener($event) {
+        return ctx.setLateFee($event);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](18, "div", 2)(19, "label", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](20, "Total number of devices");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](16, "div", 2)(17, "label", 9);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](18, "Data charges per device");
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](21, "span", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](22, "$");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](19, "span", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](20, "$");
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](23, "input", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](21, "input", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](24, "div", 2)(25, "label", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](26, "Data charges per device");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](22, MainComponent_button_22_Template, 2, 1, "button", 11);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](23, MainComponent_input_23_Template, 1, 0, "input", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](24, MainComponent_div_24_Template, 2, 0, "div", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](27, "span", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](28, "$");
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](25, MainComponent_div_25_Template, 7, 3, "div", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](29, "input", 12);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](26, MainComponent_div_26_Template, 3, 1, "div", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](30, MainComponent_button_30_Template, 2, 1, "button", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](31, MainComponent_input_31_Template, 1, 0, "input", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](32, MainComponent_div_32_Template, 2, 0, "div", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](33, MainComponent_div_33_Template, 7, 3, "div", 16);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](34, MainComponent_div_34_Template, 3, 1, "div", 17);
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("formGroup", ctx.basicInfoForm);
-      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](29);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.displaySaveButton);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
       _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.displayResetButton);
