@@ -1,16 +1,25 @@
 <div class="container mt-3">
   <form [formGroup]="basicInfoForm" (ngSubmit)="onBasicFormSubmit()">
     <div class="form-group">
-      <label for="totalDataCharges"
-        >Total mobile data charges<br />(shared among all devices)
-      </label>
+      <label for="totalDataCharges">Total mobile data charges<br />(shared among all devices)</label>
       <span class="input-group-addon" style="margin-right: 1%">$</span>
       <input
         type="number"
         class="form-control"
         formControlName="totalDataCharges"
         placeholder="Please enter total shared data charges.."
-        (keyup)="calculateCharges($event)"
+        (keyup)="setTotalDataCharge($event)"
+      />
+    </div>
+    <div class="form-group">
+      <label for="lateFee">Late fee<br/>(shared among all devices)</label>
+      <span class="input-group-addon" style="margin-right: 1%">$</span>
+      <input
+        type="number"
+        class="form-control"
+        formControlName="lateFee"
+        placeholder="Late fee charges (if any).."
+        (keyup)="setLateFee($event)"
       />
     </div>
     <div class="form-group">
